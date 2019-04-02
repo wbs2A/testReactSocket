@@ -1,0 +1,21 @@
+{
+  "name": "reactsocketapp",
+  "version": "0.1.0",
+  "private": true,
+  "main": "index.js",
+  "scripts": {
+    "client": "cd client && sudo npm start",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "node server.js",
+    "dev": "concurrently --kill-others \"npm run client\" \"npm run server\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^4.1.0",
+    "express": "^4.16.4",
+    "react-scripts": "^2.1.8",
+    "socket.io": "^2.2.0"
+  }
+}
